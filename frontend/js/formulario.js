@@ -73,11 +73,11 @@ window.onload = async () => {
             };
             const response = await fetch(`http://localhost:3031/api/movies/delete/${$id.value}`, {
                   method: "DELETE",
-                  /*                   headers: {
+                                    headers: {
                         "Content-Type": "application/json",
                   },
                   body: JSON.stringify(res),
- */
+ 
             });
             if (response.ok) {
                   console.log(res);
